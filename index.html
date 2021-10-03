@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+
+    <h1 id="dDayTitle">D-DAY!!!!</h1>
+    <h2 id="dDay">00d 00h 00m 00s</h2>
+
+    <h2 id="clock">00 : 00 : 00</h2>
+    <form id="login-form" class="hidden">
+      <input required maxlength="8" type="text" placeholder="what is your name">
+      <input type="submit" value="Log In"></input>
+    </form>
+    
+    <h1 id="greeting" class="hidden"></h1>
+
+    <div id="quote">
+      <span></span><br/>
+      <span></span>
+    </div>
+
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Enter" required>
+      
+    </form>
+    <ul id="todo-list"></ul>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/653KDIwovtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+
+    <script src="./js/greetings.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/dDay.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+  </body>
+</html>
