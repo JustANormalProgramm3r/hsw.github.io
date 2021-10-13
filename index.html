@@ -7,22 +7,36 @@
   </head>
 
   <body>
+    <div class="form">
+      <form id="dDay" action="#">
+        <input type="text" required placeholder="목표를 적어주세요!" max="16" class="setTxt"><br/>
+        <div class="dayWrap">
+          <input class="setDay" 
+          type="date" 
+          required
+          min="2000-01-01" max="2999-12-31">
+          
+          <input type="submit" value="입력">
+        </div>
+      </form>
 
-    <h1 id="dDayTitle">D-DAY!!!!</h1>
-    <h2 id="dDay">00d 00h 00m 00s</h2>
+      <h2 class="txt"></h2>
+      <h2 class="dDay_txt"></h2>
 
-    <h2 id="clock">00 : 00 : 00</h2>
-    <form id="login-form" class="hidden">
-      <input required maxlength="8" type="text" placeholder="what is your name">
-      <input type="submit" value="Log In"></input>
-    </form>
-    
-    <h1 id="greeting" class="hidden"></h1>
+      <h2 id="clock">00 : 00 : 00</h2>
+      
+      <form id="login-form" class="hidden">
+        <input required maxlength="8" type="text" placeholder="what is your name">
+        <input type="submit" value="Log In"></input>
+      </form>
+      
+      <h1 id="greeting" class="hidden"></h1>
+    </div>
 
-    <div id="quote">
+    <!-- <div id="quote">
       <span></span><br/>
       <span></span>
-    </div>
+    </div> -->
 
     <form id="todo-form">
       <input type="text" placeholder="Write a To Do and Enter" required>
@@ -39,7 +53,7 @@
 
     <script src="./js/greetings.js"></script>
     <script src="./js/clock.js"></script>
-    <script src="./js/quotes.js"></script>
+    <!-- <script src="./js/quotes.js"></script> -->
     <script src="./js/background.js"></script>
     <script src="./js/dDay.js"></script>
     <script src="./js/todo.js"></script>
